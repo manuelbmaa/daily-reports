@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Salas de Reunión</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #313945;">
+        <span class="navbar-brand mb-0 h1 text-white">Navbar</span>
+      </nav>
+    <div class="container">
+        <h1 class="text-center my-4">Sistema de Registro de Salas de Reunión</h1>
+
+        <!-- Sección de Salas Revisadas y Consultadas -->
+        <div class="row">
+            <!-- Sección 1: Salas Revisadas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-white" style="background-color: #313945;">
+                        <h4>Salas Revisadas</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formRevisadas">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Los Cobanos" id="sala1">
+                                <label class="form-check-label" for="sala1">Los Cobanos</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Barra de Santiago" id="sala2">
+                                <label class="form-check-label" for="sala2">Barra de Santiago</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Punta Roca" id="sala3">
+                                <label class="form-check-label" for="sala3">Punta Roca</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Costa del Sol" id="sala4">
+                                <label class="form-check-label" for="sala4">Costa del Sol</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Comedor General" id="sala5">
+                                <label class="form-check-label" for="sala5">Comedor General</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Punta Mango" id="sala6">
+                                <label class="form-check-label" for="sala6">Punta Mango</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Tunco" id="sala7">
+                                <label class="form-check-label" for="sala7">El Tunco</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Palmarcito" id="sala8">
+                                <label class="form-check-label" for="sala8">El Palmarcito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Mizata" id="sala9">
+                                <label class="form-check-label" for="sala9">Mizata</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Salinitas" id="sala10">
+                                <label class="form-check-label" for="sala10">Salinitas</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Cuco" id="sala11">
+                                <label class="form-check-label" for="sala11">El Cuco</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Sunzal" id="sala12">
+                                <label class="form-check-label" for="sala12">El Sunzal</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Las Tunas" id="sala13">
+                                <label class="form-check-label" for="sala13">Las Tunas</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Espino" id="sala14">
+                                <label class="form-check-label" for="sala14">El Espino</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Pimental" id="sala15">
+                                <label class="form-check-label" for="sala15">El Pimental</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Las Flores" id="sala16">
+                                <label class="form-check-label" for="sala16">Las Flores</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Majahual" id="sala17">
+                                <label class="form-check-label" for="sala17">El Majahual</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Tamarindo" id="sala18">
+                                <label class="form-check-label" for="sala18">Tamarindo</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Zapote" id="sala19">
+                                <label class="form-check-label" for="sala19">El Zapote</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Zunganera" id="sala20">
+                                <label class="form-check-label" for="sala20">Zunganera</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Oficina 01" id="sala21">
+                                <label class="form-check-label" for="sala21">Oficina 01</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección 2: Salas Consultadas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-white" style="background-color: #313945;">
+                        <h4>Salas Consultadas</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formConsultadas">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Los Cobanos" id="salaA">
+                                <label class="form-check-label" for="salaA">Los Cobanos</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Barra de Santiago" id="salaB">
+                                <label class="form-check-label" for="salaB">Barra de Santiago</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Punta Roca" id="salaC">
+                                <label class="form-check-label" for="salaC">Punta Roca</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Costa del Sol" id="salaD">
+                                <label class="form-check-label" for="salaD">Costa del Sol</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Comedor General" id="salaE">
+                                <label class="form-check-label" for="salaE">Comedor General</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Punta Mango" id="salaF">
+                                <label class="form-check-label" for="salaF">Punta Mango</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Tunco" id="salaG">
+                                <label class="form-check-label" for="salaG">El Tunco</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Palmarcito" id="salaH">
+                                <label class="form-check-label" for="salaH">El Palmarcito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Mizata" id="salaI">
+                                <label class="form-check-label" for="salaI">Mizata</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Salinitas" id="salaJ">
+                                <label class="form-check-label" for="salaJ">Salinitas</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Cuco" id="salaK">
+                                <label class="form-check-label" for="salaK">El Cuco</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Sunzal" id="salaL">
+                                <label class="form-check-label" for="salaL">El Sunzal</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Las Tunas" id="sala1M">
+                                <label class="form-check-label" for="sala1M">Las Tunas</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Espino" id="sala1N">
+                                <label class="form-check-label" for="sala1N">El Espino</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Pimental" id="salaO">
+                                <label class="form-check-label" for="salaO">El Pimental</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Las Flores" id="salaP">
+                                <label class="form-check-label" for="salaP">Las Flores</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Majahual" id="salaQ">
+                                <label class="form-check-label" for="salaQ">El Majahual</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Tamarindo" id="salaR">
+                                <label class="form-check-label" for="salaR">Tamarindo</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="El Zapote" id="salaS">
+                                <label class="form-check-label" for="salaS">El Zapote</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Zunganera" id="salaT">
+                                <label class="form-check-label" for="salaT">Zunganera</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="Oficina 01" id="salaU">
+                                <label class="form-check-label" for="salaU">Oficina 01</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Campo de comentarios -->
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #313945;">
+                <h4>Comentarios</h4>
+            </div>
+            <div class="card-body">
+                <textarea id="comentarios" class="form-control" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="text-center mb-5">
+            <button class="btn btn-primary btn-lg" onclick="generarPDF()">Generar PDF del Registro</button>
+            <button class="btn btn-danger btn-lg" onclick="limpiarTodo()">Eliminar todo</button>
+            <button class="btn btn-secondary btn-lg" onclick="cargarEstado()">Cargar Estado Guardado</button>
+        </div>
+    </div>
+
+    <!-- Script de jsPDF y funciones JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', cargarEstado);
+
+        let registrosRevisadas = JSON.parse(localStorage.getItem('registrosRevisadas')) || [];
+        let registrosConsultadas = JSON.parse(localStorage.getItem('registrosConsultadas')) || [];
+        let comentarios = localStorage.getItem('comentarios') || '';
+
+        function registrarHora(event) {
+            const checkbox = event.target;
+            const hora = new Date().toLocaleTimeString();
+            const sala = checkbox.value;
+
+            if (checkbox.checked) {
+                if (checkbox.closest('form').id === 'formRevisadas') {
+                    registrosRevisadas.push({ sala, hora });
+                    localStorage.setItem('registrosRevisadas', JSON.stringify(registrosRevisadas));
+                } else {
+                    registrosConsultadas.push({ sala, hora });
+                    localStorage.setItem('registrosConsultadas', JSON.stringify(registrosConsultadas));
+                }
+            }
+        }
+
+        document.getElementById('formRevisadas').addEventListener('change', registrarHora);
+        document.getElementById('formConsultadas').addEventListener('change', registrarHora);
+
+        document.getElementById('comentarios').addEventListener('input', function () {
+            comentarios = this.value;
+            localStorage.setItem('comentarios', comentarios);
+        });
+
+        function generarPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFontSize(16);
+            doc.text("Reporte de actividades", 20, 20);
+
+            doc.setFontSize(12);
+            doc.text("Checklist:", 20, 30);
+            registrosRevisadas.forEach((registro, index) => {
+                doc.text(`${index + 1}. Revisión de sala ${registro.sala} - Hora: ${registro.hora}`, 20, 40 + index * 10);
+            });
+
+            const inicioConsultadas = 40 + registrosRevisadas.length * 10 + 10;
+            doc.setFontSize(12);
+            doc.text("Reuniones atendidas:", 20, inicioConsultadas);
+            registrosConsultadas.forEach((registro, index) => {
+                doc.text(`${index + 1}. ${registro.sala} - Hora: ${registro.hora}`, 20, inicioConsultadas + 10 + index * 10);
+            });
+
+            const inicioComentarios = inicioConsultadas + registrosConsultadas.length * 10 + 20;
+            doc.setFontSize(12);
+            doc.text("Comentarios:", 20, inicioComentarios);
+            doc.text(comentarios || "Sin comentarios.", 20, inicioComentarios + 10);
+
+            doc.save("Registro_Salas.pdf");
+        }
+
+        function limpiarTodo() {
+            document.querySelectorAll('#formRevisadas input[type="checkbox"]').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            document.querySelectorAll('#formConsultadas input[type="checkbox"]').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+
+            document.getElementById('comentarios').value = '';
+            comentarios = '';
+
+            registrosRevisadas = [];
+            registrosConsultadas = [];
+            localStorage.removeItem('registrosRevisadas');
+            localStorage.removeItem('registrosConsultadas');
+            localStorage.removeItem('comentarios');
+            
+            alert("Todo ha sido eliminado.");
+        }
+
+        function cargarEstado() {
+            const checkboxesRevisadas = document.querySelectorAll('#formRevisadas input[type="checkbox"]');
+            checkboxesRevisadas.forEach(checkbox => {
+                if (registrosRevisadas.some(registro => registro.sala === checkbox.value)) {
+                    checkbox.checked = true;
+                }
+            });
+
+            const checkboxesConsultadas = document.querySelectorAll('#formConsultadas input[type="checkbox"]');
+            checkboxesConsultadas.forEach(checkbox => {
+                if (registrosConsultadas.some(registro => registro.sala === checkbox.value)) {
+                    checkbox.checked = true;
+                }
+            });
+
+            document.getElementById('comentarios').value = comentarios;
+        }
+    </script>
+</body>
+</html>

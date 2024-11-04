@@ -283,7 +283,7 @@
             doc.setFontSize(12);
             doc.text("Checklist:", 20, 30);
             registrosRevisadas.forEach((registro, index) => {
-                doc.text(`${index + 1}. Revisión de sala ${registro.sala} - Hora: ${registro.hora}`, 20, 40 + index * 1);
+                doc.text(`${index + 1}. Revisión de sala ${registro.sala} - Hora: ${registro.hora}`, 20, 40 + index * 10);
             });
 
             const inicioConsultadas = 40 + registrosRevisadas.length * 10 + 10;
